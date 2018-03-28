@@ -1,0 +1,16 @@
+version: '2'
+services:
+  tensorflow:
+    ports:
+     - "6006:6006"
+     - "8888:8888"
+     - "80:80"
+    volumes:
+     - ../workspace/:/workspace
+     - ../notebooks/:/notebooks
+     - ../python/:/opt/python
+    environment:
+      - PYTHONPATH=/opt/python/ 
+    image: "hemant24/tensorflow:latest"
+    
+

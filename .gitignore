@@ -1,0 +1,7 @@
+*.idea
+*.c9
+*Pods
+*build
+*.gradle
+*.iml
+*__pycache__
